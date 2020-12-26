@@ -4,10 +4,13 @@ import ReactDOM from 'react-dom';
 // const el = React.createElement('h1',null, 'Hello world');
 
 const TodoList = () => {
+
+  const items = ['Learn React', 'Build Awesome App', 'Drink cofee'];
   return (
     <ul>
-      <li>Learn React</li>
-      <li>Build Awesome App</li>
+      <li>{ items[0] }</li>
+      <li>{ items[1] }</li>
+      <li>{ items[2] }</li>
     </ul>
   );
 }
@@ -19,12 +22,17 @@ const AppHeader = () => {
 }
 
 const SearchPanel = () => {
+  const searchText = 'Type here to search';
+  const searchStyle = {
+    fontSize: '25px'
+  };
   return (
-    <input placeholder="search"/>
+    <input placeholder={searchText} style={searchStyle}/>
   );
 }
 
 const App = () => {
+
   return (
     <div>
       <AppHeader />
