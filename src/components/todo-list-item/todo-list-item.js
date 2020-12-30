@@ -9,7 +9,7 @@ export default class TodoListItem extends Component {
         this.state = {
             done: false,
             important: false,
-        }
+        };
 
         this.onLabelClick = () => {
            this.setState((state) => {
