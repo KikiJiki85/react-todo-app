@@ -15,7 +15,7 @@ export default class ItemAddForm extends Component {
     onLabelChange = (evt) => {
         this.setState({
             label: evt.target.value,
-        });
+        }); 
     };
 
     onSubmit = (evt) => {
